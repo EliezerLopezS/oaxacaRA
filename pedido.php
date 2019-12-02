@@ -5,11 +5,18 @@
     <?php include './inc/link.php'; ?>
 </head>
 <body id="container-page-index">
+<?php 
+$productName = "Producto Demostración";
+$currency = "USD";
+$productPrice = 25;
+$productId = 123456;
+$orderNumber = 546;
+?>
     <?php include './inc/navbar.php'; ?>
     <section id="container-pedido">
         <div class="container">
             <div class="page-header">
-              <h1>PEDIDOS <small class="tittles-pages-logo">OAXACA TRACIONAL</small></h1>
+              <h4>PEDIDOS <small class="tittles-pages-logo">OAXACA TRACIONAL</small></h4>
             </div>
             <br><br><br>
             <div class="row">
@@ -29,6 +36,7 @@
                             <p class="text-center">
                               <button class="btn btn-lg btn-raised btn-success btn-block" data-toggle="modal" data-target="#PagoModalTran">Transaccion Bancaria</button>
                             </p>
+                            <?php include 'paypalCheckout.php'; ?>             
                           </div>
                         </div>
                       </div>
@@ -49,7 +57,7 @@
         ?>
             <div class="container" style="margin-top: 70px;">
               <div class="page-header">
-                <h1>Mis pedidos</h1>
+                <h4>Mis pedidos</h4>
               </div>
             </div>
         <?php

@@ -15,7 +15,6 @@
             <li data-target="#slider-store" data-slide-to="0" class="active"></li>
             <li data-target="#slider-store" data-slide-to="1"></li>
         </ol>
-
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
@@ -33,9 +32,7 @@
                   <span class="tittles-pages-logo" size=30>  El arte de ser Oaxaqueño 
                 </div>
             </div>
-          
         </div>
-
         <!-- Controls -->
         <a class="left carousel-control" href="#slider-store" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -46,12 +43,10 @@
             <span class="sr-only">Next</span>
         </a>
     </section>
-    
-
     <section id="new-prod-index">    
          <div class="container">
-            <div class="page-header">
-                <h1>Últimos <small>productos </small></h1>
+            <div class="page-header" >
+                <h3>Últimos <small>- productos </small></h3>
             </div>
             <div class="row">
               	<?php
@@ -66,7 +61,7 @@
                      <div class="thumbnail">
                        <img src="assets/img-products/<?php if($fila['Imagen']!="" && is_file("./assets/img-products/".$fila['Imagen'])){ echo $fila['Imagen']; }else{ echo "default.png"; } ?>">
                        <div class="caption">
-                       		<h3><?php echo $fila['Marca']; ?></h3>
+                       		<h4><?php echo $fila['Marca']; ?></h4>
                             <p><?php echo $fila['NombreProd']; ?></p>
                             <?php if($fila['Descuento']>0): ?>
                              <p>
@@ -104,14 +99,12 @@
                         <p><a href="registration.php" class="btn btn-info btn-raised btn-block">Registrarse</a></p>   
                    </article>
                 </div>
-
                 <div class="col-xs-12 col-sm-6">
                     <img src="assets/img/3.png" alt="Smart-TV" class="img-responsive" style="width: 70%; display: block; margin: 0 auto;">
                 </div>
             </div>
         </div>
     </section>
-
     <?php include './inc/footer.php'; ?>
 </body>
 </html>

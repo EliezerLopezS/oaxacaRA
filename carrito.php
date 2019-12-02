@@ -9,7 +9,7 @@
     <section id="container-pedido">
         <div class="container">
             <div class="page-header">
-              <h1>CARRITO DE COMPRAS <small class="tittles-pages-logo">OAXACA TRADICIONAL</small></h1>
+              <h3>CARRITO DE COMPRAS <small class="tittles-pages-logo">OAXACA TRADICIONAL</small></h3>
             </div>
             <br><br><br>
             <div class="row">
