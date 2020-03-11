@@ -5,13 +5,7 @@
     <?php include './inc/link.php'; ?>
 </head>
 <body id="container-page-index">
-<?php 
-$productName = "Producto Demostración";
-$currency = "USD";
-$productPrice = 25;
-$productId = 123456;
-$orderNumber = 546;
-?>
+
     <?php include './inc/navbar.php'; ?>
     <section id="container-pedido">
         <div class="container">
@@ -36,7 +30,19 @@ $orderNumber = 546;
                             <p class="text-center">
                               <button class="btn btn-lg btn-raised btn-success btn-block" data-toggle="modal" data-target="#PagoModalTran">Transaccion Bancaria</button>
                             </p>
-                            <?php include 'paypalCheckout.php'; ?>             
+                            <!--?php include 'paypalCheckout.php'; ?-->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="upload" value="1">
+            <input type="hidden" name="business" value="seller@dezignerfotos.com">
+            <input type="hidden" name="item_name_1" value="Item Name 1">
+            <input type="hidden" name="amount_1" value="1.00">
+            <input type="hidden" name="shipping_1" value="1.75">
+            <input type="hidden" name="item_name_2" value="Item Name 2">
+            <input type="hidden" name="amount_2" value="200">
+            <input type="hidden" name="shipping_2" value="2.50">
+            <input type="submit" value="Agragar Carrito">
+    </form>             
                           </div>
                         </div>
                       </div>

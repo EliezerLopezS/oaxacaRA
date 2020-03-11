@@ -4,7 +4,7 @@
     <title>Inicio</title>
     <?php include './inc/link.php'; ?>
 </head>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css"/>
 <body id="container-page-index">
     <?php include './inc/navbar.php'; ?>
     
@@ -99,8 +99,11 @@
                         <p><a href="registration.php" class="btn btn-info btn-raised btn-block">Registrarse</a></p>   
                    </article>
                 </div>
+            <!--     <ul id="container">
+      <li><a href="cup/index.html"><img src="img/cup.png"></a></li>
+    </ul>*/-->
                 <div class="col-xs-12 col-sm-6">
-                    <img src="assets/img/3.png" alt="Smart-TV" class="img-responsive" style="width: 70%; display: block; margin: 0 auto;">
+                    <a href="cup/index.html"><img src="assets/img/3.png" alt="Smart-TV" class="img-responsive" style="width: 70%; display: block; margin: 0 auto;">
                 </div>
             </div>
         </div>

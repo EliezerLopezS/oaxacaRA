@@ -112,4 +112,5 @@ if(mysqli_num_rows($verdata)>=1){
 }else{
     echo '<script>swal("ERROR", "El DNI es incorrecto, no esta registrado con ningun cliente", "error");</script>';
 }
+
 mysqli_free_result($verdata);
